@@ -5,6 +5,9 @@ import RegistrationScreen from './components/RegistrationScreen';
 const MainNavigator = createStackNavigator({
   Home: {screen: HomeScreen},
   Registration: {screen: RegistrationScreen},
+},
+{
+  headerMode: 'none',
 });
 
 const AppNavigator = createAppContainer(MainNavigator);

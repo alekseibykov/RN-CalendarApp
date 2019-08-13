@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, ActivityIndicator } from 'react-native';
 import firebase from 'react-native-firebase';
-import { Header, Button } from './common';
+import { Container, Header, Content, Left, Body, Right, Title, Spinner } from 'native-base';
 import LoginForm from './LoginForm';
 import ContentScreen from './ContentScreen';
 
@@ -33,7 +32,7 @@ class HomeScreen extends Component {
       );
     } else {
       return (
-        <ActivityIndicator />
+        <Spinner color='blue' />;
       );
     }
   }
@@ -42,10 +41,16 @@ class HomeScreen extends Component {
     const { navigate } = this.props.navigation;
 
     return (
-      <View style={{ flex: 1 }}>
-        <Header headerText='Authentication' />
+      <Container>
+        <Header>
+          <Left/>
+          <Body>
+            <Title>Calendar App</Title>
+          </Body>
+          <Right />
+        </Header>
         { this.renderMainScreen() }
-      </View>
+      </Container>
     );
   }
 }

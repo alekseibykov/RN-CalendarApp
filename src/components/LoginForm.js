@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import firebase from 'react-native-firebase';
-import { View, TextInput, Text, ActivityIndicator } from 'react-native';
-import { Button, Card, CardSection } from './common';
+import {
+  Container, Content, Form, Item,
+  Input, Label, Button, Text, Spinner,
+ } from 'native-base';
 
 class LoginForm extends Component {
   constructor(props) {
@@ -14,21 +16,19 @@ class LoginForm extends Component {
     };
   }
 
-  async onPress() {
+  onPress() {
     const { email, password } = this.state;
 
     this.setState({ error: '', loading: true });
-    await firebase.auth().signInWithEmailAndPassword(email, password);
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .then((authUser) => {
+      console.log(authUser);
+      // this.onLoginSuccess();
+    })
+    .catch((err) => {
+      this.onLoginFail();
+    })
   }
-
-  // onLoginSuccess() {
-  //   this.setState({
-  //     email: '',
-  //     password: '',
-  //     loading: false,
-  //     error: ''
-  //   });
-  // }
 
   onLoginFail() {
     this.setState({ error: 'Authentication Failed', loading: false });
@@ -36,12 +36,12 @@ class LoginForm extends Component {
 
   renderButton() {
     if (this.state.loading) {
-      return <ActivityIndicator size="small" />;
+      return <Spinner color='blue' />;
     }
 
     return (
-      <Button style={{ height: 70 }} onPress={this.onPress.bind(this)}>
-        Log In
+      <Button style={{marginTop: 40}} block onPress={this.onPress.bind(this)}>
+        <Text>Log In</Text>
       </Button>
     );
   }
@@ -49,27 +49,33 @@ class LoginForm extends Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={{ flex: 1 }}>
-        <TextInput
-          style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-          onChangeText={(email) => this.setState({email})}
-          value={this.state.email}
-        />
-        <TextInput
-          style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-          onChangeText={(password) => this.setState({password})}
-          value={this.state.password}
-        />
-        <Text style={styles.errorTextStyle}>
-          {this.state.error}
-        </Text>
-
-        { this.renderButton() }
-
-        <Button style={{ height: 70 }} onPress={() => navigate('Registration')}>
-          Registation
-        </Button>
-      </View>
+      <Container>
+        <Content>
+          <Form>
+            <Item floatingLabel>
+              <Label>Username</Label>
+              <Input
+                onChangeText={(email) => this.setState({email})}
+                value={this.state.email}
+              />
+            </Item>
+            <Item floatingLabel last>
+              <Label>Password</Label>
+              <Input
+                onChangeText={(password) => this.setState({password})}
+                value={this.state.password}
+              />
+            </Item>
+          </Form>
+          <Text style={styles.errorTextStyle}>
+            {this.state.error}
+          </Text>
+          { this.renderButton() }
+          <Button style={{marginTop: 10}} block onPress={() => navigate('Registration')}>
+            <Text>Registration</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
 }
