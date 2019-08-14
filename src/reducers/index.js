@@ -1,8 +1,11 @@
 import { combineReducers } from 'redux';
-import ListReducer from './ListReducer';
-import ItemReducer from './ItemReducer';
+
+import { tasksReducer } from './tasksReducer';
+import { datesReducer } from './datesReducer';
+import sessionReducer from './sessionReducer';
 
 export default combineReducers({
-  content: ListReducer,
-  show: ItemReducer,
+  data: tasksReducer,
+  dates: datesReducer,
+  sessionState: sessionReducer,
 });

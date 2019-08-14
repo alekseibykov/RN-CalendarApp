@@ -1,8 +1,4 @@
-/**
- * @format
- */
-
- import React from 'react';
+import React from 'react';
 import {AppRegistry} from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -17,9 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={ store }>
-        <AppNavigator
-
-        />
+        <AppNavigator />
       </Provider>
     );
   }

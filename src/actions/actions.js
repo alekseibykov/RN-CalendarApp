@@ -1,15 +1,6 @@
-import * as firebase from "firebase/app";
-import "firebase/database";
-
-// Prototype extentions here
-Date.prototype.addDays = function(days) {
-  let date = new Date(this.valueOf());
-  date.setDate(date.getDate() + days);
-  return date;
-}
+import firebase from 'react-native-firebase';
 
 let database = firebase.database();
-let todosRef = database.ref().child('data');
 
 // Manually add item to database on refresh
 // let testDate = new Date().toString();

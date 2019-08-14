@@ -7,7 +7,8 @@ import {
  } from 'native-base';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { expandItem } from '../actions/ListActions';
+
+import { addTask, removeTask, fetchToDos } from '../actions/actions';
 
 class ContentScreen extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class ContentScreen extends Component {
   }
 
   render() {
+    console.log(this.props.sessionState);
     return (
       <Container>
         <Text>Hello there</Text>
@@ -28,13 +30,15 @@ class ContentScreen extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const { content, show } = state
-  return { content, show }
+  const { sessionState } = state
+  return { sessionState }
 };
 
 const mapDispatchToProps = dispatch => (
   bindActionCreators({
-    expandItem,
+    addTask,
+    removeTask,
+    fetchToDos,
   }, dispatch)
 );
 
