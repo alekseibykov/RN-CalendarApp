@@ -32,7 +32,7 @@ class HomeScreen extends Component {
       );
     } else {
       return (
-        <Spinner color='blue' />;
+        <Spinner color='blue' />
       );
     }
   }
