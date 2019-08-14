@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import firebase from 'react-native-firebase';
-import { View, TextInput, TouchableOpacity, Text, FlatList } from 'react-native';
-import { Button, Card, CardSection } from './common';
+import {
+  Container, Content, Form, Item, Icon,
+  Input, Label, Button, Text, Spinner,
+  Header, Left, Body, Title, Right
+ } from 'native-base';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { expandItem } from '../actions/ListActions';
@@ -9,43 +12,17 @@ import { expandItem } from '../actions/ListActions';
 class ContentScreen extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: null };
-  }
 
-  onPressButton(item) {
-    this.props.expandItem(item.id)
-  }
-
-  renderDescription(item) {
-    if (this.props.show.show === item.id) {
-      return <Text>{item.description}</Text>;
-    }
-    return null;
   }
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
-        <FlatList
-          extraData={this.props.show}
-          data={this.props.content.default}
-          renderItem={({item}) => (
-            <View>
-              <TouchableOpacity onPress={() => this.onPressButton(item)}>
-                <Text>
-                  {item.title}
-                </Text>
-              </TouchableOpacity>
-              {this.renderDescription(item)}
-            </View>
-          )}
-          keyExtractor={(item, index) => 'item' + item.id}
-        />
-
-        <Button style={{ height: 70 }} onPress={() => firebase.auth().signOut()}>
-          Log Out
+      <Container>
+        <Text>Hello there</Text>
+        <Button onPress={() => firebase.auth().signOut()}>
+          <Text>Log Out</Text>
         </Button>
-      </View>
+      </Container>
     );
   }
 }

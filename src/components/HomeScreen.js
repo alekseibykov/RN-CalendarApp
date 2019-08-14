@@ -43,7 +43,6 @@ class HomeScreen extends Component {
     return (
       <Container>
         <Header>
-          <Left/>
           <Body>
             <Title>Calendar App</Title>
           </Body>
