@@ -1,18 +1,42 @@
 import firebase from 'react-native-firebase';
 
 let database = firebase.database();
+let ref = database.ref().child('users');
 
 // Manually add item to database on refresh
 // let testDate = new Date().toString();
-// firebase.database().ref().child('data').push({name: 'do stuff', eventDate: testDate})
+// firebase.database().ref().child('users/fzp60YzJu8YZ7NiRusJYfgsLndj2/tasks/').push({name: 'do stuff', eventDate: testDate})
+
+// firebase.database().ref().child('users').once('value')
+// .then((snap) => {
+//   console.log(snap.val());
+// })
+// .catch((err) => {
+//   console.log(err);
+// })
+
+// export const fetchToDos = (uid) => async dispatch => {
+//   var userId = firebase.auth().currentUser.uid;
+//   console.log(userId);
+//   firebase.database().ref().child('users/' + userId + '/tasks/').once('value')
+//   .then((snapshot) => {
+//     console.log('INSIDE');
+//     dispatch({
+//       type: 'FETCH_TASKS',
+//       payload: snapshot.val()
+//     });
+//   })
+// };
 
 export const fetchToDos = (uid) => async dispatch => {
-  database.ref().child('users/' + uid + '/tasks/').on("value", snapshot => {
+  var userId = firebase.auth().currentUser.uid;
+  database.ref().child('users/' + userId + '/tasks/').on('value', snapshot => {
+    console.log('INSIDE');
     dispatch({
       type: 'FETCH_TASKS',
       payload: snapshot.val()
     });
-  });
+  })
 };
 
 export const addTask = (taskObject) => async dispatch => {
