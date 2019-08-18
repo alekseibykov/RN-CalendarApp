@@ -1,4 +1,18 @@
-import firebase from 'react-native-firebase';
+import * as firebase from "firebase/app";
+import "firebase/database";
+import "firebase/auth";
+
+var firebaseConfig = {
+  apiKey: "AIzaSyCJXnJxU-Mta94jfDRTINQG5_w9Ei47PHc",
+  authDomain: "rn-calendar-app.firebaseapp.com",
+  databaseURL: "https://rn-calendar-app.firebaseio.com",
+  projectId: "rn-calendar-app",
+  storageBucket: "",
+  messagingSenderId: "598400197900",
+  appId: "1:598400197900:web:1a45bdb24cf4c4ef"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 let database = firebase.database();
 let ref = database.ref().child('users');
@@ -7,31 +21,9 @@ let ref = database.ref().child('users');
 // let testDate = new Date().toString();
 // firebase.database().ref().child('users/fzp60YzJu8YZ7NiRusJYfgsLndj2/tasks/').push({name: 'do stuff', eventDate: testDate})
 
-// firebase.database().ref().child('users').once('value')
-// .then((snap) => {
-//   console.log(snap.val());
-// })
-// .catch((err) => {
-//   console.log(err);
-// })
-
-// export const fetchToDos = (uid) => async dispatch => {
-//   var userId = firebase.auth().currentUser.uid;
-//   console.log(userId);
-//   firebase.database().ref().child('users/' + userId + '/tasks/').once('value')
-//   .then((snapshot) => {
-//     console.log('INSIDE');
-//     dispatch({
-//       type: 'FETCH_TASKS',
-//       payload: snapshot.val()
-//     });
-//   })
-// };
-
 export const fetchToDos = (uid) => async dispatch => {
   var userId = firebase.auth().currentUser.uid;
   database.ref().child('users/' + userId + '/tasks/').on('value', snapshot => {
-    console.log('INSIDE');
     dispatch({
       type: 'FETCH_TASKS',
       payload: snapshot.val()
@@ -48,7 +40,8 @@ export const addTask = (taskObject) => async dispatch => {
 };
 
 export const removeTask = (key, uid) => async dispatch => {
-  database.ref().child('users/' + uid + '/tasks/' + key).remove((snap) => {
+  var userId = firebase.auth().currentUser.uid;
+  database.ref().child('users/' + userId + '/tasks/' + key).remove((snap) => {
     dispatch({
       type: 'REMOVE_TASK'
     });

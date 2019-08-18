@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import firebase from 'react-native-firebase';
+import * as firebase from "firebase/app";
+import "firebase/database";
+import "firebase/auth";
 import {
   Container, Content, Form, Item, Icon,
   Input, Label, Button, Text, Spinner,
@@ -135,6 +137,11 @@ class ContentScreen extends Component {
               onDateChange={this.setDate.bind(this)}
               disabled={false}
             />
+          </Item>
+          <Item>
+            <Button onPress={this.handleClick.bind(this)}>
+              <Text>Add</Text>
+            </Button>
           </Item>
           <Item>
             <Button onPress={this.handleClick.bind(this)}>

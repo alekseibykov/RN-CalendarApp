@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import firebase from 'react-native-firebase';
+import * as firebase from "firebase/app";
+import "firebase/database";
+import "firebase/auth";
 import { Container, Header, Content, Left, Body, Right, Title, Spinner } from 'native-base';
 import { connect } from 'react-redux';
 
@@ -29,7 +31,7 @@ class HomeScreen extends Component {
       return (
         <LoginForm navigation={self.props.navigation} />
       );
-    } 
+    }
   }
 
   render() {
