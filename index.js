@@ -7,6 +7,13 @@ import reduxThunk from 'redux-thunk';
 import {name as appName} from './app.json';
 import AppNavigator from './src/AppNavigator';
 import reducer from './src/reducers/index';
+import { YellowBox } from 'react-native';
+
+YellowBox.ignoreWarnings([
+    'Warning: componentWillMount is deprecated',
+    'Warning: componentWillUpdate is deprecated',
+    'Warning: componentWillReceiveProps is deprecated',
+]);
 
 const store = createStore(reducer, {}, applyMiddleware(reduxThunk));
 

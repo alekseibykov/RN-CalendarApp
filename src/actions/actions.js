@@ -39,7 +39,7 @@ export const addTask = (taskObject) => async dispatch => {
   })
 };
 
-export const removeTask = (key, uid) => async dispatch => {
+export const removeTask = (key) => async dispatch => {
   var userId = firebase.auth().currentUser.uid;
   database.ref().child('users/' + userId + '/tasks/' + key).remove((snap) => {
     dispatch({

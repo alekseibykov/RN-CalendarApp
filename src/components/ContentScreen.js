@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { addTask, removeTask, fetchToDos } from '../actions/actions';
+import EventList from './EventList';
 
 class ContentScreen extends Component {
   state = {
@@ -115,6 +116,7 @@ class ContentScreen extends Component {
       <Container>
 
         <Content>
+          <EventList />
           <Item>
             <Label>Task name:</Label>
             <Input
@@ -137,11 +139,6 @@ class ContentScreen extends Component {
               onDateChange={this.setDate.bind(this)}
               disabled={false}
             />
-          </Item>
-          <Item>
-            <Button onPress={this.handleClick.bind(this)}>
-              <Text>Add</Text>
-            </Button>
           </Item>
           <Item>
             <Button onPress={this.handleClick.bind(this)}>
