@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
 import * as firebase from "firebase/app";
 import "firebase/database";
 import "firebase/auth";
@@ -18,14 +20,21 @@ class LoginForm extends Component {
     };
   }
 
+  reload() {
+    console.log('hi there');
+  }
+
   onPress() {
     const { email, password } = this.state;
+    let qwe = setInterval(this.reload, 500);
+    setTimeout(() => clearInterval(qwe), 18500);
 
     this.setState({ error: '', loading: true });
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((authUser) => {
       // console.log(authUser);
       // this.onLoginSuccess();
+      this.props.onSetAuthUser(authUser);
     })
     .catch((err) => {
       this.onLoginFail();
@@ -82,6 +91,11 @@ class LoginForm extends Component {
   }
 }
 
+const mapDispatchToProps = dispatch => ({
+  onSetAuthUser: authUser =>
+    dispatch({ type: 'AUTH_USER_SET', authUser }),
+});
+
 const styles = {
   errorTextStyle: {
     fontSize: 20,
@@ -90,4 +104,4 @@ const styles = {
   }
 };
 
-export default LoginForm;
+export default connect(null, mapDispatchToProps)(LoginForm);;

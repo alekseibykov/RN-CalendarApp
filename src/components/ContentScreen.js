@@ -9,6 +9,7 @@ import {
  } from 'native-base';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { StyleSheet } from 'react-native'
 
 import { addTask, removeTask, fetchToDos } from '../actions/actions';
 import EventList from './EventList';
@@ -16,7 +17,7 @@ import EventList from './EventList';
 class ContentScreen extends Component {
   state = {
     startDate: new Date(),
-    name: 'Add task here',
+    name: '',
   };
 
   componentDidMount() {
@@ -111,17 +112,19 @@ class ContentScreen extends Component {
   }
 
   render() {
-    console.log(this.props.data);
+    console.log(this.state);
     return (
       <Container>
 
-        <Content>
+        <Content >
           <EventList />
-          <Item>
+          <Item style={styles.item}>
             <Label>Task name:</Label>
             <Input
               placeholder="Add task here"
               placeholderTextColor="#d3d3d3"
+              value={this.state.name}
+              onChangeText={(name) => this.setState({name})}
             />
           </Item>
           <Item>
@@ -151,6 +154,12 @@ class ContentScreen extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  item: {
+    marginTop: 20
+  }
+});
 
 const mapStateToProps = (state) => {
   const { data, sessionState } = state

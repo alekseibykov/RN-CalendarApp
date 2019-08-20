@@ -125,9 +125,6 @@ class EventList extends Component {
             <Text>Tomorrow</Text>
           </ListItem>
           {tomorrowList}
-          <ListItem>
-            <Text>qwe</Text>
-          </ListItem>
           <ListItem itemDivider>
             <Text>Upcoming</Text>
           </ListItem>
