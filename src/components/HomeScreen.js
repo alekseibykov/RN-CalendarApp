@@ -27,9 +27,13 @@ class HomeScreen extends Component {
       return (
         <ContentScreen screenProps={this.props.screenProps} />
       );
-    } else {
+    } else if (authUser === null) {
       return (
         <LoginForm navigation={self.props.navigation} />
+      );
+    } else {
+      return (
+        <Spinner />
       );
     }
   }

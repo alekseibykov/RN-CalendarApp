@@ -5,7 +5,7 @@ import "firebase/auth";
 import {
   Container, Content, Form, Item, Icon,
   Input, Label, Button, Text, Spinner,
-  Header, Left, Body, Title, Right, DatePicker
+  Header, Left, Body, Title, Right, DatePicker,
  } from 'native-base';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -105,10 +105,22 @@ class ContentScreen extends Component {
 
   renderLogout() {
     return (
-      <Button onPress={() => firebase.auth().signOut()}>
+      <Button style={{ alignSelf: 'flex-end'}} onPress={() => firebase.auth().signOut()}>
         <Text>Log Out</Text>
       </Button>
     );
+  }
+
+  renderEventList() {
+    if (this.props.data === null) {
+      return (
+        <Spinner />
+      );
+    } else {
+      return (
+        <EventList />
+      );
+    }
   }
 
   render() {
@@ -116,8 +128,8 @@ class ContentScreen extends Component {
     return (
       <Container>
 
-        <Content >
-          <EventList />
+        <Content>
+          {this.renderEventList()}
           <Item style={styles.item}>
             <Label>Task name:</Label>
             <Input
@@ -143,11 +155,9 @@ class ContentScreen extends Component {
               disabled={false}
             />
           </Item>
-          <Item>
-            <Button onPress={this.handleClick.bind(this)}>
-              <Text>Add</Text>
-            </Button>
-          </Item>
+          <Button style={{marginTop: 30}} full onPress={this.handleClick.bind(this)}>
+            <Text>Add</Text>
+          </Button>
         </Content>
         {this.renderLogout()}
       </Container>

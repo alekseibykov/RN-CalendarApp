@@ -37,6 +37,7 @@ class EventList extends Component {
   }
 
   render() {
+    console.log('QWE', this.props.data);
     let today = this.props.dates.today;
     let tomorrow = this.props.dates.tomorrow;
     let upcoming = this.props.dates.upcoming;
