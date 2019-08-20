@@ -28,35 +28,6 @@ class ContentScreen extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   var userId = firebase.auth().currentUser.uid;
-  //   console.log(userId);
-  //   if (userId) {
-  //     let database = firebase.database();
-  //     this.listener = database.ref().child('users/' + userId + '/tasks/').on('value', snap => {
-  //       console.log('INSIDE');
-  //       this.props.fetchToDos(snap);
-  //     },
-  //     (err) => {
-  //       console.log(err);
-  //     });
-  //   }
-
-
-    // this.listener = firebase.auth().onAuthStateChanged(
-    //   authUser => {
-    //     this.props.onSetAuthUser(authUser);
-    //   },
-    //   () => {
-    //     this.props.onSetAuthUser(null);
-    //   },
-    // );
-    // }
-
-  // componentWillUnmount() {
-  //   this.listener();
-  // }
-
   setDate(newDate) {
     this.setState({ startDate: newDate });
   }
@@ -89,20 +60,6 @@ class ContentScreen extends Component {
     });
   }
 
-  // handleClick_2() {
-  //   var userId = firebase.auth().currentUser.uid;
-  //   console.log(userId);
-  //   firebase.database().ref().child('users/' + userId + '/tasks/').once('value')
-  //   .then((snapshot) => {
-  //     console.log('INSIDE');
-  //     console.log(snapshot.val());
-  //     // dispatch({
-  //     //   type: 'FETCH_TASKS',
-  //     //   payload: snapshot.val()
-  //     // });
-  //   })
-  // }
-
   renderLogout() {
     return (
       <Button style={{ alignSelf: 'flex-end'}} onPress={() => firebase.auth().signOut()}>
@@ -124,10 +81,8 @@ class ContentScreen extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <Container>
-
         <Content>
           {this.renderEventList()}
           <Item style={styles.item}>
@@ -183,13 +138,5 @@ const mapDispatchToProps = dispatch => (
     fetchToDos,
   }, dispatch)
 );
-// const mapDispatchToProps = dispatch => (
-//   bindActionCreators({
-//     addTask,
-//     removeTask,
-//     fetchToDos: (snap) =>
-//       dispatch({ type: 'FETCH_TASKS', payload: snap.val() }),
-//   }, dispatch)
-// );
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContentScreen);

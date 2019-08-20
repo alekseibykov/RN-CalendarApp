@@ -1,15 +1,23 @@
 import * as firebase from "firebase/app";
 import "firebase/database";
 import "firebase/auth";
-
+import {
+  API_KEY,
+  AUTH_DOMAIN,
+  DATABASE_URL,
+  PROJECT_ID,
+  MESSAGING_SENDER_ID,
+  APP_ID,
+} from 'react-native-dotenv'
+console.log(API_KEY);
 var firebaseConfig = {
-  apiKey: "AIzaSyCJXnJxU-Mta94jfDRTINQG5_w9Ei47PHc",
-  authDomain: "rn-calendar-app.firebaseapp.com",
-  databaseURL: "https://rn-calendar-app.firebaseio.com",
-  projectId: "rn-calendar-app",
+  apiKey: API_KEY,
+  authDomain: AUTH_DOMAIN,
+  databaseURL: DATABASE_URL,
+  projectId: PROJECT_ID,
   storageBucket: "",
-  messagingSenderId: "598400197900",
-  appId: "1:598400197900:web:1a45bdb24cf4c4ef"
+  messagingSenderId: MESSAGING_SENDER_ID,
+  appId: APP_ID,
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

@@ -84,37 +84,6 @@ class EventList extends Component {
       }
     });
 
-    // let tomorrowList = data.map((el, index) => {
-    //   let date = new Date(el.data.eventDate);
-    //   if (date >= tomorrow && date <= upcoming) {
-    //     return (
-    //       <li className="task_item" key={el.key}>
-    //         <span onClick={() => this.handleOpenModal(el.key)}>
-    //           {el.data.name + ' '}
-    //         </span>
-    //         <button onClick={() => this.handleRemove(el.key, uid)} type="button">Remove</button>
-    //       </li>
-    //     );
-    //   }
-    //   return null;
-    // });
-    //
-    // // TODO upcoming should be no date insted of today + 2
-    // let upcomingList = data.map((el, index) => {
-    //   let date = new Date(el.data.eventDate);
-    //   if (date >= upcoming) {
-    //     return (
-    //       <li className="task_item" key={el.key}>
-    //         <span onClick={() => this.handleOpenModal(el.key)}>
-    //           {el.data.name + ' '}
-    //         </span>
-    //         <button onClick={() => this.handleRemove(el.key, uid)} type="button">Remove</button>
-    //       </li>
-    //     );
-    //   }
-    //   return null;
-    // });
-
     return (
       <Content>
         <List>

@@ -9,17 +9,6 @@ import LoginForm from './LoginForm';
 import ContentScreen from './ContentScreen';
 
 class HomeScreen extends Component {
-
-  // componentWillMount() {
-  //   firebase.auth().onAuthStateChanged((user) => {
-  //     if (user) {
-  //       this.setState({ loggedIn: true });
-  //     } else {
-  //       this.setState({ loggedIn: false });
-  //     }
-  //   });
-  // }
-
   renderMainScreen() {
     let self = this;
     let {authUser} = this.props;
