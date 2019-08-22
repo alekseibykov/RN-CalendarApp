@@ -8,7 +8,7 @@ import {
 
 import { removeTask } from '../actions/actions';
 
-// import TaskAdder from './TaskAdder';
+import TaskAdder from './TaskAdder';
 // import ModalEdit from './ModalEdit';
 
 class EventList extends Component {
@@ -55,7 +55,7 @@ class EventList extends Component {
         return (
           <ListItem key={el.key}>
             <Text>{el.data.name + ' '}</Text>
-            <Button onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
+            <Button bordered onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
           </ListItem>
         );
       }
@@ -66,7 +66,7 @@ class EventList extends Component {
         return (
           <ListItem key={el.key}>
             <Text>{el.data.name + ' '}</Text>
-            <Button onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
+            <Button bordered onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
           </ListItem>
         );
       }
@@ -77,7 +77,7 @@ class EventList extends Component {
         return (
           <ListItem key={el.key}>
             <Text>{el.data.name + ' '}</Text>
-            <Button onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
+            <Button bordered onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
           </ListItem>
         );
       }
@@ -88,14 +88,17 @@ class EventList extends Component {
         <List>
           <ListItem itemDivider>
             <Text>Today</Text>
+            <TaskAdder day="today" />
           </ListItem>
           {todayList}
           <ListItem itemDivider>
             <Text>Tomorrow</Text>
+            <TaskAdder day="tomorrow" />
           </ListItem>
           {tomorrowList}
           <ListItem itemDivider>
             <Text>Upcoming</Text>
+            <TaskAdder day="upcoming" />
           </ListItem>
           {upcomingList}
         </List>

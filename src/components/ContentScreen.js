@@ -60,14 +60,6 @@ class ContentScreen extends Component {
     });
   }
 
-  renderLogout() {
-    return (
-      <Button style={{ alignSelf: 'flex-end'}} onPress={() => firebase.auth().signOut()}>
-        <Text>Log Out</Text>
-      </Button>
-    );
-  }
-
   renderEventList() {
     if (this.props.data === null) {
       return (
@@ -114,7 +106,6 @@ class ContentScreen extends Component {
             <Text>Add</Text>
           </Button>
         </Content>
-        {this.renderLogout()}
       </Container>
     );
   }

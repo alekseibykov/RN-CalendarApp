@@ -23,15 +23,11 @@ class ContentScreen extends Component {
   }
 
   render() {
-    console.log(this.props.sessionState);
     return (
       <Container>
         <CalendarPicker
           onDateChange={this.onDateChange.bind(this)}
         />
-        <Button onPress={() => firebase.auth().signOut()}>
-          <Text>Log Out</Text>
-        </Button>
       </Container>
     );
   }
