@@ -32,8 +32,6 @@ class LoginForm extends Component {
     this.setState({ error: '', loading: true });
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then((authUser) => {
-      // console.log(authUser);
-      // this.onLoginSuccess();
       this.props.onSetAuthUser(authUser);
     })
     .catch((err) => {

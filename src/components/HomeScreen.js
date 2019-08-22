@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import * as firebase from "firebase/app";
 import "firebase/database";
 import "firebase/auth";
-import { Container, Header, Content, Left, Body, Right, Title, Spinner } from 'native-base';
+import {
+  Container, Header, Content, Left,
+  Body, Right, Title, Spinner, Button, Icon,
+} from 'native-base';
 import { connect } from 'react-redux';
 
 import LoginForm from './LoginForm';
@@ -33,6 +36,11 @@ class HomeScreen extends Component {
     return (
       <Container>
         <Header>
+          <Left>
+            <Button onPress={this.props.navigation.openDrawer} transparent>
+              <Icon name='menu' />
+            </Button>
+          </Left>
           <Body>
             <Title>Calendar App</Title>
           </Body>

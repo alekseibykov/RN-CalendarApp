@@ -1,4 +1,5 @@
-import {createStackNavigator, createAppContainer} from 'react-navigation';
+import React, { Component } from "react";
+import {createDrawerNavigator, createAppContainer} from 'react-navigation';
 import { bindActionCreators, compose  } from 'redux';
 import { connect } from 'react-redux';
 
@@ -6,14 +7,15 @@ import HomeScreen from './components/HomeScreen';
 import RegistrationScreen from './components/RegistrationScreen';
 import CalendarScreen from './components/CalendarScreen';
 import withAuthentication  from './components/Session/withAuthentication';
+import SideBar from './components/SideBar';
 
-const MainNavigator = createStackNavigator({
+const MainNavigator = createDrawerNavigator({
   Home: {screen: HomeScreen},
   Registration: {screen: RegistrationScreen},
   Calendar: {screen: CalendarScreen},
 },
 {
-  headerMode: 'none',
+  contentComponent: props => <SideBar {...props} />
 });
 
 const AppNavigator = createAppContainer(MainNavigator);

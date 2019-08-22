@@ -37,13 +37,12 @@ class EventList extends Component {
   }
 
   render() {
-    console.log('QWE', this.props.data);
     let today = this.props.dates.today;
     let tomorrow = this.props.dates.tomorrow;
     let upcoming = this.props.dates.upcoming;
-
     let rawData = this.props.data;
     let data = [];
+
     if (rawData !== null) {
       data = Object.keys(rawData).map(function(key) {
         return {key: key, data: rawData[key]};

@@ -9,7 +9,7 @@ import {
   MESSAGING_SENDER_ID,
   APP_ID,
 } from 'react-native-dotenv'
-console.log(API_KEY);
+
 var firebaseConfig = {
   apiKey: API_KEY,
   authDomain: AUTH_DOMAIN,
