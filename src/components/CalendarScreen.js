@@ -25,7 +25,6 @@ class ContentScreen extends Component {
   }
 
   render() {
-    console.log(this.props);
     let rawData = this.props.data;
     let data = [];
     if (rawData !== null) {

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {
   Container, Header, Content, List, ListItem,
-  Text, Button, Input, Right, Form, Item,
+  Text, Button, Input, Right, Form, Item, Icon
 } from 'native-base';
 import { View } from 'react-native'
 
@@ -85,7 +85,9 @@ class TaskAdder extends Component {
     } else {
       renderAddTodayTask = (
         <Right>
-          <Button small rounded onPress={this.handleClick.bind(this)}><Text>+</Text></Button>
+          <Button transparent onPress={this.handleClick.bind(this)}>
+            <Icon name="ios-add-circle-outline" />
+          </Button>
         </Right>
       );
     }

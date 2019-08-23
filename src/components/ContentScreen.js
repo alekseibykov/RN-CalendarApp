@@ -102,8 +102,8 @@ class ContentScreen extends Component {
               disabled={false}
             />
           </Item>
-          <Button style={{marginTop: 30}} full onPress={this.handleClick.bind(this)}>
-            <Text>Add</Text>
+          <Button style={{marginTop: 20, height: 60}} full onPress={this.handleClick.bind(this)}>
+            <Text>Add Specific Task</Text>
           </Button>
         </Content>
       </Container>

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {
   Container, Header, Content, List, ListItem,
-  Text, Button, Input, Right, Form, Item,
+  Text, Button, Input, Right, Form, Item, Icon, Left
 } from 'native-base';
 import { View } from 'react-native'
 
@@ -52,8 +52,14 @@ class DayTasks extends Component {
       if (date >= today && date <= tomorrow) {
         return (
           <ListItem key={el.key}>
-            <Text>{el.data.name + ' '}</Text>
-            <Button bordered onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
+            <Left>
+              <Text>{el.data.name + ' '}</Text>
+            </Left>
+            <Right>
+              <Button transparent onPress={() => this.handleRemove(el.key)}>
+                <Icon name="trash" />
+              </Button>
+            </Right>
           </ListItem>
         );
       }

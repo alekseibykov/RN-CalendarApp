@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {
   Container, Header, Content, List, ListItem,
-  Text, Button,
+  Text, Button, Right, Left, Icon
 } from 'native-base';
+import { Dimensions } from 'react-native'
 
 import { removeTask } from '../actions/actions';
 
@@ -53,9 +54,15 @@ class EventList extends Component {
       let date = new Date(el.data.eventDate);
       if (date >= today && date <= tomorrow) {
         return (
-          <ListItem key={el.key}>
-            <Text>{el.data.name + ' '}</Text>
-            <Button bordered onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
+          <ListItem key={el.key} style={{width: (Dimensions.get('window').width)}}>
+            <Left>
+              <Text>{el.data.name + ' '}</Text>
+            </Left>
+            <Right>
+              <Button transparent onPress={() => this.handleRemove(el.key)}>
+                <Icon name="trash" />
+              </Button>
+            </Right>
           </ListItem>
         );
       }
@@ -65,8 +72,14 @@ class EventList extends Component {
       if (date >= tomorrow && date <= upcoming) {
         return (
           <ListItem key={el.key}>
-            <Text>{el.data.name + ' '}</Text>
-            <Button bordered onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
+            <Left>
+              <Text>{el.data.name + ' '}</Text>
+            </Left>
+            <Right>
+              <Button transparent onPress={() => this.handleRemove(el.key)}>
+                <Icon name="trash" />
+              </Button>
+            </Right>
           </ListItem>
         );
       }
@@ -76,8 +89,14 @@ class EventList extends Component {
       if (date >= upcoming) {
         return (
           <ListItem key={el.key}>
-            <Text>{el.data.name + ' '}</Text>
-            <Button bordered onPress={() => this.handleRemove(el.key)}><Text>Remove</Text></Button>
+            <Left>
+              <Text>{el.data.name + ' '}</Text>
+            </Left>
+            <Right>
+              <Button transparent onPress={() => this.handleRemove(el.key)}>
+                <Icon name="trash" />
+              </Button>
+            </Right>
           </ListItem>
         );
       }
