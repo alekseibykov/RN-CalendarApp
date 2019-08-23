@@ -7,7 +7,7 @@ import "firebase/auth";
 import {
   Container, Content, Form, Item,
   Input, Label, Button, Text, Spinner,
- } from 'native-base';
+} from 'native-base';
 
 class LoginForm extends Component {
   constructor(props) {
@@ -35,11 +35,12 @@ class LoginForm extends Component {
       this.props.onSetAuthUser(authUser);
     })
     .catch((err) => {
-      this.onLoginFail();
+      this.onLoginFail(err);
     })
   }
 
-  onLoginFail() {
+  onLoginFail(err) {
+    console.log(err);
     this.setState({ error: 'Authentication Failed', loading: false });
   }
 
@@ -102,4 +103,4 @@ const styles = {
   }
 };
 
-export default connect(null, mapDispatchToProps)(LoginForm);;
+export default connect(null, mapDispatchToProps)(LoginForm);

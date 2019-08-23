@@ -36,7 +36,11 @@ export const fetchToDos = (uid) => async dispatch => {
       type: 'FETCH_TASKS',
       payload: snapshot.val()
     });
-  })
+  },
+  (err) => {
+    console.log(err);
+  }
+  )
 };
 
 export const addTask = (taskObject) => async dispatch => {
