@@ -5,7 +5,6 @@ import {
   Container, Header, Content, List, ListItem,
   Text, Button, Right, Left, Icon
 } from 'native-base';
-import { Dimensions } from 'react-native'
 
 import { removeTask } from '../actions/actions';
 
@@ -54,7 +53,7 @@ class EventList extends Component {
       let date = new Date(el.data.eventDate);
       if (date >= today && date <= tomorrow) {
         return (
-          <ListItem key={el.key} style={{width: (Dimensions.get('window').width)}}>
+          <ListItem key={el.key}>
             <Left>
               <Text>{el.data.name + ' '}</Text>
             </Left>

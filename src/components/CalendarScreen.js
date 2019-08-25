@@ -56,6 +56,7 @@ class ContentScreen extends Component {
           <Right />
         </Header>
         <CalendarPicker
+          enableSwipe={false}
           onDateChange={this.onDateChange.bind(this)}
           customDatesStyles={highlightedDates}
         />

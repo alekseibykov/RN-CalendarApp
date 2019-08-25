@@ -13,6 +13,7 @@ YellowBox.ignoreWarnings([
     'Warning: componentWillMount is deprecated',
     'Warning: componentWillUpdate is deprecated',
     'Warning: componentWillReceiveProps is deprecated',
+    "Warning: ViewPagerAndroid has been extracted",
 ]);
 
 const store = createStore(reducer, {}, applyMiddleware(reduxThunk));
