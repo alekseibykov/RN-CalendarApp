@@ -73,6 +73,7 @@ class TaskAdder extends Component {
             style={{backgroundColor: 'white'}}
             onChangeText={this.handleClick_3.bind(this)}
             value={this.state.nameAddToday}
+            autoFocus={true}
           />
           <Button success onPress={this.handleClick_4.bind(this)}>
             <Text>Add</Text>
