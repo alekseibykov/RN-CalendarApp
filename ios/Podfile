@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'AwesomeNativeBase' do
-  # Pods for AwesomeNativeBase
+target 'CalendarApp' do
+  # Pods for CalendarApp
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,7 +27,7 @@ target 'AwesomeNativeBase' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'AwesomeNativeBaseTests' do
+  target 'CalendarAppTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -35,10 +35,10 @@ target 'AwesomeNativeBase' do
   use_native_modules!
 end
 
-target 'AwesomeNativeBase-tvOS' do
-  # Pods for AwesomeNativeBase-tvOS
+target 'CalendarApp-tvOS' do
+  # Pods for CalendarApp-tvOS
 
-  target 'AwesomeNativeBase-tvOSTests' do
+  target 'CalendarApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

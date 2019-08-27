@@ -1,4 +1,4 @@
-package com.awesomenativebase;
+package com.calendarapp;
 
 import android.app.Application;
 import android.util.Log;

@@ -1,9 +1,9 @@
-package com.awesomenativebase;
+package com.calendarapp;
 
+import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
-import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
 
@@ -13,7 +13,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "AwesomeNativeBase";
+        return "CalendarApp";
     }
 
     @Override

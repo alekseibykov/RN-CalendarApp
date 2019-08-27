@@ -6,7 +6,7 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* AwesomeNativeBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AwesomeNativeBaseTests.m */; };
+		00E356F31AD99517003FC87E /* CalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CalendarAppTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -14,25 +14,25 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* AwesomeNativeBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AwesomeNativeBaseTests.m */; };
-		91789F2724AE4837A50438DA /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BE9D9EFEBDF4BD58B3FA683 /* AntDesign.ttf */; };
-		162213AA57A54275935E1BB4 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1271D906C4F044708F85C76C /* Entypo.ttf */; };
-		09ADA132ED9D4CC1BB2649CB /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6188F5A826F34AAB85A7DE6A /* EvilIcons.ttf */; };
-		A08AC3CFC09F4AE98DF00B39 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2ED53B0A4F514DFFB2D52CBA /* Feather.ttf */; };
-		4D054E5476F64AAB88427C49 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E650D81E43A3A9F88BAC /* FontAwesome.ttf */; };
-		919FBAC5769147E28D778DEB /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99C43EC75B964520B07E0306 /* FontAwesome5_Brands.ttf */; };
-		FEA31CF349594859B88C217D /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402CBB0484D7490CB217A938 /* FontAwesome5_Regular.ttf */; };
-		7D98112648C54927B544B872 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFF7FA2FE5994CE984B18F85 /* FontAwesome5_Solid.ttf */; };
-		10530D4247DD41F08A0CB89E /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458C4BCDFF2F4DCD88BED72C /* Foundation.ttf */; };
-		DD9A7F76F8964DD18542F183 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A8BB68B397848F38FAE7C9B /* Ionicons.ttf */; };
-		5582B81CD58549C499C12BB6 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD2BF6BEB784D30B17B7907 /* MaterialCommunityIcons.ttf */; };
-		98ADB654D7734AA9A64211CF /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88D817F35868474088942920 /* MaterialIcons.ttf */; };
-		872054C5D95E4CB4A2C1A891 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C4ACA7A348A421680FDCF0E /* Octicons.ttf */; };
-		EACF2D74A7A5489186144972 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32E18CC2B17D40C798B63DB7 /* Roboto_medium.ttf */; };
-		B4DB9CF1DC63452BACE0DA5B /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 094B0946EA4A4FADA77CBED4 /* Roboto.ttf */; };
-		7394B6B18F8A4D9AB407C068 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF42BEC1CE594B359B6AE19F /* rubicon-icon-font.ttf */; };
-		B6D29215AA434699AF0F6D00 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C039351EC3B946448CC6904C /* SimpleLineIcons.ttf */; };
-		3F2869C1E38E426A9D556151 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FD4FC078740439BBB5CA391 /* Zocial.ttf */; };
+		2DCD954D1E0B4F2C00145EB5 /* CalendarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CalendarAppTests.m */; };
+		2C530C62C18A4C98BC7B0F11 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80A9815D4BDE428D8AD2E59D /* AntDesign.ttf */; };
+		E9B6B76E69044F08833026C0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91EC891218B94BF38BBA1E03 /* Entypo.ttf */; };
+		88DB462A91C644A387384EE5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB4ECFD9641E4D1E80CF049B /* EvilIcons.ttf */; };
+		4FF72B619DF94E2F9E79417B /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE08AEE3FB4EC89F08B9C8 /* Feather.ttf */; };
+		B4B2349E21D245C68173A3EC /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92E71747F6224A2D9DF935A2 /* FontAwesome.ttf */; };
+		2D71936FA1E94A708D9869A8 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47CBE76A140A4A97BAB88E24 /* FontAwesome5_Brands.ttf */; };
+		9C08F909D56E44A4BFB4BE71 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21273A1575C14B69B7AC759B /* FontAwesome5_Regular.ttf */; };
+		98C7CDC248D84F008F0981E7 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E20F1B935E40938D9C9568 /* FontAwesome5_Solid.ttf */; };
+		6A3ECC9A50654347A761EC15 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AD92B8705E84CC4831BC110 /* Foundation.ttf */; };
+		A4BD4D5782F443A78E26C255 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71A97B6CCFD4407989272239 /* Ionicons.ttf */; };
+		3EBDF5AE3C8645369537586F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE949683BD694B2594BA39BA /* MaterialCommunityIcons.ttf */; };
+		DD2072A9FD5747149EB59D4B /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C2E9D3F15F54A4594B758A2 /* MaterialIcons.ttf */; };
+		588BFCB16BB4448E85AEC951 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4BD602968E44D3AB9912CCB /* Octicons.ttf */; };
+		564B48A21526424F85096935 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468AD393438847919492821C /* Roboto_medium.ttf */; };
+		B625BFAD9B004B7CBC46CF55 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A8872F83AF54957A2CFBE3C /* Roboto.ttf */; };
+		5E1312E09B4F45458E3B4E4C /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E07CAB8D4E6242769AB6669F /* rubicon-icon-font.ttf */; };
+		75FC3BFB139A468DA7C948B1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26654FE83A044C3C811D5A7C /* SimpleLineIcons.ttf */; };
+		C5960A6DDC4248E3A5BD79D9 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A13C827A11DB4F6F93B5D8EF /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,51 +41,51 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = AwesomeNativeBase;
+			remoteInfo = CalendarApp;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "AwesomeNativeBase-tvOS";
+			remoteInfo = "CalendarApp-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* AwesomeNativeBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeNativeBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* CalendarAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* AwesomeNativeBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeNativeBaseTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* AwesomeNativeBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeNativeBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AwesomeNativeBase/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AwesomeNativeBase/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* CalendarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarAppTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* CalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CalendarApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CalendarApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AwesomeNativeBase/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AwesomeNativeBase/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AwesomeNativeBase/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* AwesomeNativeBase-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AwesomeNativeBase-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* AwesomeNativeBase-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AwesomeNativeBase-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CalendarApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CalendarApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CalendarApp/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* CalendarApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalendarApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* CalendarApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalendarApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		0BE9D9EFEBDF4BD58B3FA683 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1271D906C4F044708F85C76C /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6188F5A826F34AAB85A7DE6A /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2ED53B0A4F514DFFB2D52CBA /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8682E650D81E43A3A9F88BAC /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		99C43EC75B964520B07E0306 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		402CBB0484D7490CB217A938 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DFF7FA2FE5994CE984B18F85 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		458C4BCDFF2F4DCD88BED72C /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3A8BB68B397848F38FAE7C9B /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8CD2BF6BEB784D30B17B7907 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		88D817F35868474088942920 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0C4ACA7A348A421680FDCF0E /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		32E18CC2B17D40C798B63DB7 /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		094B0946EA4A4FADA77CBED4 /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CF42BEC1CE594B359B6AE19F /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C039351EC3B946448CC6904C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9FD4FC078740439BBB5CA391 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		80A9815D4BDE428D8AD2E59D /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		91EC891218B94BF38BBA1E03 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB4ECFD9641E4D1E80CF049B /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3EFE08AEE3FB4EC89F08B9C8 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		92E71747F6224A2D9DF935A2 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		47CBE76A140A4A97BAB88E24 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21273A1575C14B69B7AC759B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		84E20F1B935E40938D9C9568 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6AD92B8705E84CC4831BC110 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		71A97B6CCFD4407989272239 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE949683BD694B2594BA39BA /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C2E9D3F15F54A4594B758A2 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A4BD602968E44D3AB9912CCB /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		468AD393438847919492821C /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0A8872F83AF54957A2CFBE3C /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E07CAB8D4E6242769AB6669F /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26654FE83A044C3C811D5A7C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A13C827A11DB4F6F93B5D8EF /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +120,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* AwesomeNativeBaseTests */ = {
+		00E356EF1AD99517003FC87E /* CalendarAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* AwesomeNativeBaseTests.m */,
+				00E356F21AD99517003FC87E /* CalendarAppTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = AwesomeNativeBaseTests;
+			path = CalendarAppTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -137,7 +137,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* AwesomeNativeBase */ = {
+		13B07FAE1A68108700A75B9A /* CalendarApp */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -148,7 +148,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = AwesomeNativeBase;
+			name = CalendarApp;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -170,12 +170,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* AwesomeNativeBase */,
+				13B07FAE1A68108700A75B9A /* CalendarApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* AwesomeNativeBaseTests */,
+				00E356EF1AD99517003FC87E /* CalendarAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				BB46E92D15C44DCCA8B9CE6E /* Resources */,
+				A81215BDB3554404AA003B3B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -185,35 +185,35 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* AwesomeNativeBase.app */,
-				00E356EE1AD99517003FC87E /* AwesomeNativeBaseTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* AwesomeNativeBase-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* AwesomeNativeBase-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* CalendarApp.app */,
+				00E356EE1AD99517003FC87E /* CalendarAppTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* CalendarApp-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* CalendarApp-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB46E92D15C44DCCA8B9CE6E /* Resources */ = {
+		A81215BDB3554404AA003B3B /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				0BE9D9EFEBDF4BD58B3FA683 /* AntDesign.ttf */,
-				1271D906C4F044708F85C76C /* Entypo.ttf */,
-				6188F5A826F34AAB85A7DE6A /* EvilIcons.ttf */,
-				2ED53B0A4F514DFFB2D52CBA /* Feather.ttf */,
-				8682E650D81E43A3A9F88BAC /* FontAwesome.ttf */,
-				99C43EC75B964520B07E0306 /* FontAwesome5_Brands.ttf */,
-				402CBB0484D7490CB217A938 /* FontAwesome5_Regular.ttf */,
-				DFF7FA2FE5994CE984B18F85 /* FontAwesome5_Solid.ttf */,
-				458C4BCDFF2F4DCD88BED72C /* Foundation.ttf */,
-				3A8BB68B397848F38FAE7C9B /* Ionicons.ttf */,
-				8CD2BF6BEB784D30B17B7907 /* MaterialCommunityIcons.ttf */,
-				88D817F35868474088942920 /* MaterialIcons.ttf */,
-				0C4ACA7A348A421680FDCF0E /* Octicons.ttf */,
-				32E18CC2B17D40C798B63DB7 /* Roboto_medium.ttf */,
-				094B0946EA4A4FADA77CBED4 /* Roboto.ttf */,
-				CF42BEC1CE594B359B6AE19F /* rubicon-icon-font.ttf */,
-				C039351EC3B946448CC6904C /* SimpleLineIcons.ttf */,
-				9FD4FC078740439BBB5CA391 /* Zocial.ttf */,
+				80A9815D4BDE428D8AD2E59D /* AntDesign.ttf */,
+				91EC891218B94BF38BBA1E03 /* Entypo.ttf */,
+				DB4ECFD9641E4D1E80CF049B /* EvilIcons.ttf */,
+				3EFE08AEE3FB4EC89F08B9C8 /* Feather.ttf */,
+				92E71747F6224A2D9DF935A2 /* FontAwesome.ttf */,
+				47CBE76A140A4A97BAB88E24 /* FontAwesome5_Brands.ttf */,
+				21273A1575C14B69B7AC759B /* FontAwesome5_Regular.ttf */,
+				84E20F1B935E40938D9C9568 /* FontAwesome5_Solid.ttf */,
+				6AD92B8705E84CC4831BC110 /* Foundation.ttf */,
+				71A97B6CCFD4407989272239 /* Ionicons.ttf */,
+				DE949683BD694B2594BA39BA /* MaterialCommunityIcons.ttf */,
+				5C2E9D3F15F54A4594B758A2 /* MaterialIcons.ttf */,
+				A4BD602968E44D3AB9912CCB /* Octicons.ttf */,
+				468AD393438847919492821C /* Roboto_medium.ttf */,
+				0A8872F83AF54957A2CFBE3C /* Roboto.ttf */,
+				E07CAB8D4E6242769AB6669F /* rubicon-icon-font.ttf */,
+				26654FE83A044C3C811D5A7C /* SimpleLineIcons.ttf */,
+				A13C827A11DB4F6F93B5D8EF /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -222,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* AwesomeNativeBaseTests */ = {
+		00E356ED1AD99517003FC87E /* CalendarAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AwesomeNativeBaseTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CalendarAppTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -235,14 +235,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = AwesomeNativeBaseTests;
-			productName = AwesomeNativeBaseTests;
-			productReference = 00E356EE1AD99517003FC87E /* AwesomeNativeBaseTests.xctest */;
+			name = CalendarAppTests;
+			productName = CalendarAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* CalendarAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* AwesomeNativeBase */ = {
+		13B07F861A680F5B00A75B9A /* CalendarApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeNativeBase" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CalendarApp" */;
 			buildPhases = (
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -254,14 +254,14 @@
 			);
 			dependencies = (
 			);
-			name = AwesomeNativeBase;
-			productName = "AwesomeNativeBase";
-			productReference = 13B07F961A680F5B00A75B9A /* AwesomeNativeBase.app */;
+			name = CalendarApp;
+			productName = "CalendarApp";
+			productReference = 13B07F961A680F5B00A75B9A /* CalendarApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* AwesomeNativeBase-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* CalendarApp-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AwesomeNativeBase-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CalendarApp-tvOS" */;
 			buildPhases = (
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
@@ -273,14 +273,14 @@
 			);
 			dependencies = (
 			);
-			name = "AwesomeNativeBase-tvOS";
-			productName = "AwesomeNativeBase-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* AwesomeNativeBase-tvOS.app */;
+			name = "CalendarApp-tvOS";
+			productName = "CalendarApp-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* CalendarApp-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* AwesomeNativeBase-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* CalendarApp-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AwesomeNativeBase-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CalendarApp-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -291,9 +291,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "AwesomeNativeBase-tvOSTests";
-			productName = "AwesomeNativeBase-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* AwesomeNativeBase-tvOSTests.xctest */;
+			name = "CalendarApp-tvOSTests";
+			productName = "CalendarApp-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* CalendarApp-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -320,7 +320,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AwesomeNativeBase" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CalendarApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -333,10 +333,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* AwesomeNativeBase */,
-				00E356ED1AD99517003FC87E /* AwesomeNativeBaseTests */,
-				2D02E47A1E0B4A5D006451C7 /* AwesomeNativeBase-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* AwesomeNativeBase-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* CalendarApp */,
+				00E356ED1AD99517003FC87E /* CalendarAppTests */,
+				2D02E47A1E0B4A5D006451C7 /* CalendarApp-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* CalendarApp-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,24 +355,24 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				91789F2724AE4837A50438DA /* AntDesign.ttf in Resources */,
-				162213AA57A54275935E1BB4 /* Entypo.ttf in Resources */,
-				09ADA132ED9D4CC1BB2649CB /* EvilIcons.ttf in Resources */,
-				A08AC3CFC09F4AE98DF00B39 /* Feather.ttf in Resources */,
-				4D054E5476F64AAB88427C49 /* FontAwesome.ttf in Resources */,
-				919FBAC5769147E28D778DEB /* FontAwesome5_Brands.ttf in Resources */,
-				FEA31CF349594859B88C217D /* FontAwesome5_Regular.ttf in Resources */,
-				7D98112648C54927B544B872 /* FontAwesome5_Solid.ttf in Resources */,
-				10530D4247DD41F08A0CB89E /* Foundation.ttf in Resources */,
-				DD9A7F76F8964DD18542F183 /* Ionicons.ttf in Resources */,
-				5582B81CD58549C499C12BB6 /* MaterialCommunityIcons.ttf in Resources */,
-				98ADB654D7734AA9A64211CF /* MaterialIcons.ttf in Resources */,
-				872054C5D95E4CB4A2C1A891 /* Octicons.ttf in Resources */,
-				EACF2D74A7A5489186144972 /* Roboto_medium.ttf in Resources */,
-				B4DB9CF1DC63452BACE0DA5B /* Roboto.ttf in Resources */,
-				7394B6B18F8A4D9AB407C068 /* rubicon-icon-font.ttf in Resources */,
-				B6D29215AA434699AF0F6D00 /* SimpleLineIcons.ttf in Resources */,
-				3F2869C1E38E426A9D556151 /* Zocial.ttf in Resources */,
+				2C530C62C18A4C98BC7B0F11 /* AntDesign.ttf in Resources */,
+				E9B6B76E69044F08833026C0 /* Entypo.ttf in Resources */,
+				88DB462A91C644A387384EE5 /* EvilIcons.ttf in Resources */,
+				4FF72B619DF94E2F9E79417B /* Feather.ttf in Resources */,
+				B4B2349E21D245C68173A3EC /* FontAwesome.ttf in Resources */,
+				2D71936FA1E94A708D9869A8 /* FontAwesome5_Brands.ttf in Resources */,
+				9C08F909D56E44A4BFB4BE71 /* FontAwesome5_Regular.ttf in Resources */,
+				98C7CDC248D84F008F0981E7 /* FontAwesome5_Solid.ttf in Resources */,
+				6A3ECC9A50654347A761EC15 /* Foundation.ttf in Resources */,
+				A4BD4D5782F443A78E26C255 /* Ionicons.ttf in Resources */,
+				3EBDF5AE3C8645369537586F /* MaterialCommunityIcons.ttf in Resources */,
+				DD2072A9FD5747149EB59D4B /* MaterialIcons.ttf in Resources */,
+				588BFCB16BB4448E85AEC951 /* Octicons.ttf in Resources */,
+				564B48A21526424F85096935 /* Roboto_medium.ttf in Resources */,
+				B625BFAD9B004B7CBC46CF55 /* Roboto.ttf in Resources */,
+				5E1312E09B4F45458E3B4E4C /* rubicon-icon-font.ttf in Resources */,
+				75FC3BFB139A468DA7C948B1 /* SimpleLineIcons.ttf in Resources */,
+				C5960A6DDC4248E3A5BD79D9 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* AwesomeNativeBaseTests.m in Sources */,
+				00E356F31AD99517003FC87E /* CalendarAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* AwesomeNativeBaseTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* CalendarAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,12 +502,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* AwesomeNativeBase */;
+			target = 13B07F861A680F5B00A75B9A /* CalendarApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* AwesomeNativeBase-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* CalendarApp-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -519,7 +519,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = AwesomeNativeBase;
+			path = CalendarApp;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -533,7 +533,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AwesomeNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = CalendarAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -543,7 +543,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeNativeBase.app/AwesomeNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarApp.app/CalendarApp";
 			};
 			name = Debug;
 		};
@@ -552,7 +552,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = AwesomeNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = CalendarAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -562,7 +562,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeNativeBase.app/AwesomeNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarApp.app/CalendarApp";
 			};
 			name = Release;
 		};
@@ -572,7 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = AwesomeNativeBase/Info.plist;
+				INFOPLIST_FILE = CalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -580,7 +580,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AwesomeNativeBase;
+				PRODUCT_NAME = CalendarApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -590,7 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = AwesomeNativeBase/Info.plist;
+				INFOPLIST_FILE = CalendarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -598,7 +598,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AwesomeNativeBase;
+				PRODUCT_NAME = CalendarApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -615,14 +615,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "AwesomeNativeBase-tvOS/Info.plist";
+				INFOPLIST_FILE = "CalendarApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AwesomeNativeBase-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CalendarApp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -642,14 +642,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "AwesomeNativeBase-tvOS/Info.plist";
+				INFOPLIST_FILE = "CalendarApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AwesomeNativeBase-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CalendarApp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -668,17 +668,17 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "AwesomeNativeBase-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "CalendarApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AwesomeNativeBase-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CalendarApp-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeNativeBase-tvOS.app/AwesomeNativeBase-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarApp-tvOS.app/CalendarApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -694,17 +694,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "AwesomeNativeBase-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "CalendarApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AwesomeNativeBase-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.CalendarApp-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeNativeBase-tvOS.app/AwesomeNativeBase-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarApp-tvOS.app/CalendarApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -811,7 +811,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AwesomeNativeBaseTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CalendarAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -820,7 +820,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeNativeBase" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CalendarApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -829,7 +829,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AwesomeNativeBase-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CalendarApp-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -838,7 +838,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AwesomeNativeBase-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "CalendarApp-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -847,7 +847,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AwesomeNativeBase" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "CalendarApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
