@@ -49,7 +49,7 @@ class DayTasks extends Component {
 
     return data.map((el, index) => {
       let date = new Date(el.data.eventDate);
-      if (date >= today && date <= tomorrow) {
+      if (date >= today && date < tomorrow) {
         return (
           <ListItem key={el.key}>
             <Left>
