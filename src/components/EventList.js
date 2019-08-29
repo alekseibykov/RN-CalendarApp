@@ -5,38 +5,39 @@ import {
   Container, Header, Content, List, ListItem,
   Text, Button, Right, Left, Icon
 } from 'native-base';
+import Modal from "react-native-modal";
 
 import { removeTask } from '../actions/actions';
 
 import TaskAdder from './TaskAdder';
-// import ModalEdit from './ModalEdit';
+import ModalEdit from './ModalEdit';
 
 class EventList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false,
       modalKey: '',
+      isModalVisible: false,
     };
 
     this.handleRemove = this.handleRemove.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
-    this.handleCloseModal = this.handleCloseModal.bind(this);
   }
+
+  toggleModal() {
+    this.setState({ isModalVisible: !this.state.isModalVisible });
+  };
 
   handleRemove(key) {
     this.props.removeTask(key)
   }
 
   handleOpenModal(key) {
-    this.setState({ showModal: true, modalKey: key });
-  }
-
-  handleCloseModal() {
-    this.setState({ showModal: false });
+    this.setState({ isModalVisible: true, modalKey: key });
   }
 
   render() {
+    console.log('rerender')
     let today = this.props.dates.today;
     let tomorrow = this.props.dates.tomorrow;
     let upcoming = this.props.dates.upcoming;
@@ -53,7 +54,7 @@ class EventList extends Component {
       let date = new Date(el.data.eventDate);
       if (date >= today && date <= tomorrow) {
         return (
-          <ListItem key={el.key}>
+          <ListItem onPress={() => this.handleOpenModal(el.key)} key={el.key}>
             <Left>
               <Text>{el.data.name + ' '}</Text>
             </Left>
@@ -103,6 +104,11 @@ class EventList extends Component {
 
     return (
       <Content>
+        <ModalEdit
+          isModalVisible={this.state.isModalVisible}
+          toggleModal={this.toggleModal.bind(this)}
+          modalKey={this.state.modalKey}
+        />
         <List>
           <ListItem itemDivider>
             <Text>Today</Text>
