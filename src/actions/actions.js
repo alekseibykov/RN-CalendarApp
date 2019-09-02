@@ -61,7 +61,8 @@ export const removeTask = (key) => async dispatch => {
 };
 
 export const changeTaskName = (currentTaskObject) => async dispatch => {
-  database.ref().child('data/' + currentTaskObject.key).update({ name: currentTaskObject.name }, (snap) => {
+  var userId = firebase.auth().currentUser.uid;
+  database.ref().child('users/' + userId + '/tasks/' + currentTaskObject.key).update({ name: currentTaskObject.name }, (snap) => {
     dispatch({
       type: 'CHANGE_TASK_NAME'
     });
@@ -69,7 +70,8 @@ export const changeTaskName = (currentTaskObject) => async dispatch => {
 };
 
 export const changeTaskDate = (currentTaskObject) => async dispatch => {
-  database.ref().child('data/' + currentTaskObject.key).update({ eventDate: currentTaskObject.date.toString() }, (snap) => {
+  var userId = firebase.auth().currentUser.uid;
+  database.ref().child('users/' + userId + '/tasks/' + currentTaskObject.key).update({ eventDate: currentTaskObject.date.toString() }, (snap) => {
     dispatch({
       type: 'CHANGE_TASK_DATE'
     });

@@ -37,7 +37,6 @@ class EventList extends Component {
   }
 
   render() {
-    console.log('rerender')
     let today = this.props.dates.today;
     let tomorrow = this.props.dates.tomorrow;
     let upcoming = this.props.dates.upcoming;
@@ -52,7 +51,7 @@ class EventList extends Component {
 
     let todayList = data.map((el, index) => {
       let date = new Date(el.data.eventDate);
-      if (date >= today && date <= tomorrow) {
+      if (date >= today && date < tomorrow) {
         return (
           <ListItem onPress={() => this.handleOpenModal(el.key)} key={el.key}>
             <Left>
@@ -69,9 +68,9 @@ class EventList extends Component {
     });
     let tomorrowList = data.map((el, index) => {
       let date = new Date(el.data.eventDate);
-      if (date >= tomorrow && date <= upcoming) {
+      if (date >= tomorrow && date < upcoming) {
         return (
-          <ListItem key={el.key}>
+          <ListItem onPress={() => this.handleOpenModal(el.key)} key={el.key}>
             <Left>
               <Text>{el.data.name + ' '}</Text>
             </Left>
@@ -88,7 +87,7 @@ class EventList extends Component {
       let date = new Date(el.data.eventDate);
       if (date >= upcoming) {
         return (
-          <ListItem key={el.key}>
+          <ListItem onPress={() => this.handleOpenModal(el.key)} key={el.key}>
             <Left>
               <Text>{el.data.name + ' '}</Text>
             </Left>
